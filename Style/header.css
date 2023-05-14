@@ -1,0 +1,49 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    color: #07c2ec;
+
+
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "Header Nav Nav"
+                         "line line line";
+
+}
+.Title{
+    font-size:35px;
+    padding: 10px;
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav a{
+    color: #3e89ea;
+    font-weight: bold ;
+ }
+
+
+header{
+    grid-area: Header; 
+}
+a:hover{
+    transition: .5s;
+    color: rgb(194, 199, 204);
+}
+span{
+    grid-area: line;
+}
+header hr{
+    width: 90%;
+    margin-top: 0;
+}

@@ -1,0 +1,37 @@
+.About{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "title title title"
+                         "photo text-about text-about";
+    
+}
+
+section h1{
+    grid-area: title;
+    font-size: 30pt;
+    padding:0 5% 0 5%;
+    background-color: #07c2ec;
+    color: white;
+}
+.About p{
+    font-size: 15pt;
+
+}
+
+.text-about{
+    grid-area: text-about;
+    padding:0 5% 0 5%;
+    
+}
+
+.photo{
+    grid-area: photo;
+    padding-left: 20px;
+
+}
+.photo img{
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}

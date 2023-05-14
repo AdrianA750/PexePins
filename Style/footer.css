@@ -1,0 +1,43 @@
+footer{
+    grid-area: Footer;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "Link . Social";
+    background-color: black;
+
+}
+
+footer .Link{
+    grid-area:Link;
+    display:flex;
+    flex-direction: column;
+    margin: 10%;
+}
+footer .Link a{
+    font-size: 25px;
+    text-decoration: none;
+}
+
+footer .Social {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10%;
+    grid-area: Social;
+    font-size: 30px;
+    align-content: flex-start;
+}
+.Social a{
+    padding: 5px;
+}
+
+footer h1{
+    margin: 0;
+}
+a{
+    transition-duration: .5s;
+
+    text-decoration: none;
+    color: white;
+ }
+

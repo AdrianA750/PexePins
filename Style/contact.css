@@ -1,0 +1,33 @@
+input[type=text], select, textarea {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  padding: 12px;
+  border-bottom-width: 2px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #07c2ec;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input[type=submit]:hover {
+  background-color: #89d2e2;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 0 5% 20px 5%;
+}
