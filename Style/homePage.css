@@ -2,20 +2,20 @@ body{
 
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "Header Header Header Header"
-                         "section1 section1 section1 section1"
-                         "section2 section2 section2 section2"
-                         "Footer Footer Footer Footer"
+                         "section section section section"
+                         "Footer Footer Footer Footer";
 
 }
 
 
 
 section{
-    display: flex;
-    justify-content:space-between;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-area: section;
+    justify-content: center;
 }
 section h2{
     text-align: center;
@@ -27,14 +27,8 @@ section p{
     margin: 0 5% 0 5%;
 }
 section img{
-    width: 50%;
-    height: auto;
-}
-.section{
-    grid-area: section1;
-}
-.section2{
-    grid-area: section2;
+    width: 100%;
+    height: 100%;
 }
 
 .Text{
@@ -43,6 +37,40 @@ section img{
     justify-content: center;
     align-items: center;
 }
-.Text2{
+/* .Text2{
     width: 50%;
-}
+} */
+
+.grid-item {
+    
+    height: 500px;
+    text-align: center;
+  }
+
+
+@media only screen and (max-width: 600px) {
+
+    section{
+        display: grid;
+        grid-template-columns:auto ;
+        grid-template-areas: "Image1"
+                             "Text1"
+                             "Image2"
+                             "Text2";
+        grid-area: section;
+        justify-items: center;
+        justify-content: center;
+    }
+    .Image1{
+        grid-area: Image1;
+    }
+    .Image2{
+        grid-area: Image2;
+    }
+    .Text1{
+        grid-area: Text1;
+    }
+    .Text2{
+        grid-area: Text2;
+    }
+  }
