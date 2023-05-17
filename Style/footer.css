@@ -34,10 +34,12 @@ footer .Social {
 footer h1{
     margin: 0;
 }
-a{
+footer a{
     transition-duration: .5s;
 
     text-decoration: none;
     color: white;
  }
-
+footer .Social{
+    display: none;
+}

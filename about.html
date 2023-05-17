@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9f456f560d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Style/about.css">
     <link rel="stylesheet" href="Style/header.css">
     <link rel="stylesheet" href="Style/footer.css">
@@ -13,13 +14,31 @@
 <body>
 
     <header> 
-        <div class="Title"><h1 class="Title">Pexe</h1> </div>
+        <div class="Title"><img src="Images/logo.png" alt="Pexe Logo"> </div>
         <nav>
             <a href="index.html">Home Page</a>
             <a href="pins.html">Pins</a>
             <a href="about.html">About</a>
             <a href="contact-us.html">Contact Us</a>
+
+           
         </nav>  
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        <span><hr></span>
+
+        <div class="topnav">
+            <div id="myLinks">
+                <a href="index.html">Home Page</a>
+                <a href="pins.html">Pins</a>
+                <a href="about.html">About</a>
+                <a href="contact-us.html">Contact Us</a>
+            </div>
+            
+          </div>
+
+      
     </header>
     
 
@@ -49,5 +68,15 @@
         </div>
     </footer>
 
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 </html>

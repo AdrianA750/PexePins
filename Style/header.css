@@ -21,6 +21,10 @@ header{
     padding: 10px;
     margin: 0;
 }
+.Title img{
+    
+    width: 96px;
+}
 nav{
     display: flex;
     align-items: center;
@@ -28,7 +32,7 @@ nav{
     justify-content: space-between;
 }
 nav a{
-    color: #3e89ea;
+    color: #07c2ec;
     font-weight: bold ;
  }
 
@@ -38,7 +42,7 @@ header{
 }
 a:hover{
     transition: .5s;
-    color: rgb(194, 199, 204);
+    color: #0eadd1;
 }
 span{
     grid-area: line;
@@ -46,6 +50,66 @@ span{
 header hr{
     width: 90%;
     margin-top: 0;
+}
+
+
+/* burguer menu */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: #07c2ec;
+    font-weight: bold ;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .topnav a:hover{
+    background-color: #07c2ec;
+    color: white;
+  }
+  
+  .icon{
+    text-decoration: none;
+    color: #07c2ec;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .topnav{
+      display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    header{
+        border-bottom: 1px solid #555;
+        grid-template-areas:"Header Nav Nav"
+                            "line line line";
+    }
+    nav span{
+        display: none;
+    }
+    nav a{
+        display: none;
+    }
+    .topnav{
+    grid-area: line;
+    display: block;
+}
+
+
 }
 
 
