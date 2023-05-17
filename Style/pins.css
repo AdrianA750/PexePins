@@ -23,15 +23,19 @@ body{
 
 .PinsList li{
     border: 3px;
+    border-radius: 5px;
     margin: 5px;
     padding: 10px;
     width: 250px;
-    height: 100px;
     box-shadow: 1px 1px 3px rgb(217, 217, 217);
 }
 .PinsList li p{
     margin: 0;
     font-size: small;
+}
+.PinsList img{
+    width: inherit;
+    border-radius: 10px;
 }
 
 

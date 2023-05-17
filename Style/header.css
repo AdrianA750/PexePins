@@ -34,6 +34,7 @@ nav{
 nav a{
     color: #07c2ec;
     font-weight: bold ;
+    text-decoration: none;
  }
 
 
@@ -80,12 +81,11 @@ header hr{
   }
   
   .icon{
+    display: none;
     text-decoration: none;
     color: #07c2ec;
     font-size: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
   }
   
   
@@ -93,6 +93,11 @@ header hr{
       display: none;
   }
   @media only screen and (max-width: 600px) {
+    .icon{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
     header{
         border-bottom: 1px solid #555;
         grid-template-areas:"Header Nav Nav"
